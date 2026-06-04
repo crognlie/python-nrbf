@@ -2,6 +2,12 @@
 
 A pure-Python parser for .NET BinaryFormatter streams ([MS-NRBF spec](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-nrbf/)).  No dependencies beyond the standard library.
 
+## Installation
+
+```sh
+pip install nrbf
+```
+
 ## Library usage
 
 ```python
@@ -21,7 +27,7 @@ Both functions return plain Python objects — `dict`, `list`, `str`, `int`, `fl
 
 ## Command-line usage
 
-`nrbfdump` reads a BinaryFormatter file (or stdin) and prints it.  It automatically decompresses gzip input.
+`nrbfdump` is installed automatically with the package.  It reads a BinaryFormatter file (or stdin) and prints it.  It automatically decompresses gzip input.
 
 ```
 usage: nrbfdump [FILE] [--format FORMAT]
