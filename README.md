@@ -1,5 +1,9 @@
 # python-nrbf
 
+[![PyPI version](https://img.shields.io/pypi/v/nrbf.svg)](https://pypi.org/project/nrbf/)
+[![Python versions](https://img.shields.io/pypi/pyversions/nrbf.svg)](https://pypi.org/project/nrbf/)
+[![License](https://img.shields.io/pypi/l/nrbf.svg)](LICENSE)
+
 A pure-Python parser for .NET BinaryFormatter streams ([MS-NRBF spec](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-nrbf/)).  No dependencies beyond the standard library.
 
 ## Installation
