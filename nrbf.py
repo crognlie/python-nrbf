@@ -449,6 +449,9 @@ class NRBFParser:
 
 def _unwrap_collection(obj: dict) -> Any:
     """Convert System.Collections types to native Python equivalents."""
+    # .NET enums are serialized as classes with a single `value__` int member.
+    if set(obj.keys()) == {'value__', '__class__'} and isinstance(obj.get('value__'), int):
+        return obj['value__']
     cls = obj.get('__class__', '')
     if cls.startswith('System.Collections.Generic.List`1'):
         items = obj.get('_items') or []
