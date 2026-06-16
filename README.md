@@ -27,7 +27,7 @@ data = nrbf.loads(raw_bytes)
 
 Both functions return plain Python objects — `dict`, `list`, `str`, `int`, `float`, `bool`, or `None`.  The `.NET` type name is preserved in a `__class__` key on dicts so you can identify types if needed.
 
-`System.Collections.Generic.List<T>` and `Dictionary<K,V>` are automatically unwrapped to Python `list` and `dict`.
+`System.Collections.Generic.List<T>` and `Dictionary<K,V>` are automatically unwrapped to Python `list` and `dict`.  `.NET` enum values are unwrapped to plain `int`s.
 
 ## Command-line usage
 
@@ -70,6 +70,7 @@ All MS-NRBF record types are supported:
 - Classes with full member type info (`ClassWithMembersAndTypes`, `SystemClassWithMembersAndTypes`, `ClassWithId`)
 - `System.Collections.Generic.List<T>` → `list`
 - `System.Collections.Generic.Dictionary<K,V>` → `dict`
+- `.NET` enum values → `int`
 
 ## License
 

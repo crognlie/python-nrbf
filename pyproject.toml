@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "nrbf"
-version = "0.1.0"
+version = "0.1.1"
 description = "Pure-Python parser for .NET BinaryFormatter (MS-NRBF) streams"
 readme = "README.md"
 license = "MIT"
