@@ -10,6 +10,9 @@ A pure-Python parser for .NET BinaryFormatter streams ([MS-NRBF spec](https://le
 
 ```sh
 pip install nrbf
+
+# YAML output support for nrbfdump
+pip install "nrbf[yaml]"
 ```
 
 ## Library usage
@@ -56,7 +59,7 @@ cat data.dat.gz | nrbfdump
 # Pretty-print for quick inspection
 nrbfdump data.dat --format pprint
 
-# YAML output (requires: pip install pyyaml)
+# YAML output (requires: pip install "nrbf[yaml]")
 nrbfdump data.dat --format yaml
 ```
 
